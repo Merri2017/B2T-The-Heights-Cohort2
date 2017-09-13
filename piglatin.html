@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pig Latin</title>
+	</head>
+	<body>
+	<h1 id="milk"></h1>
+		<script type="text/javascript">
+			
+			var text = prompt ("enter a word");
+			// I'm not sure why this works with var str =. I just added it there and it works when I use it but if I delete it, the code won't remove the first letter.
+			var str =
+			
+
+			document.getElementById("milk").innerHTML = text ;
+			document.getElementById("milk").innerHTML = str.slice (1, str.length) + str.charAt(0) + "ay";
+
+			//So after a long time of trial and error, this is my conclusion: I had to use each statement in the correct order in which I wanted it to display. Then, I used str.slice to remove the first letter. Then charAt to move the first letter to the end and then added ay last, so it can show up last in the word. 
+	
+
+		</script>
+	</body>
+</html>
