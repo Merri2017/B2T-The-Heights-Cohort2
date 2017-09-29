@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays and Loops</title> 
+	</head>
+	<body>
+	<script type="text/javascript">
+		var colors = ["Blue","Green","Red","Orange","Violet","Indigo","Yellow"];
+		var o = ["th","st","nd","rd"];
+		var toDisplay;
+
+		for(var i= 0; i<colors.length; i++)
+		
+		//var i is to indicate an index
+		// you want to count from the first array which is i = 0 index and .length which is the full length of the array.  
+		// var i is the counter, therefore it is equal to zero. 
+		//you can make a varabile anywhere in the document/loop. 
+		// use i for colors index because it was the counter. 
+		// (i+1) is displaying the numbers from 1-4 everytime it goes back around. 
+		// console.log(toDisplay); this is to console.log the todisplay results. 
+		
+			for(var i = 0; i < colors.length; i++){
+				if(i == 0){
+					toDisplay = ("1" + o[1] + " choice is " + colors[i]);
+				}else if (i == 1){
+					toDisplay = ("2" + o[2] + " choice is " + colors[i]);
+				}else if (i == 2){
+					toDisplay = ( "3" + o[3] + " choice is " + colors[i]);
+				}else{
+					toDisplay=((i+1)+ o[0] + " choice is " + colors[i]);
+				}
+				console.log(toDisplay);
+			}		
+		 
+	</script>
+
+	</body>
+</html>
