@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Finding The Student's Average</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var grade= [80 + 77 + 88 + 95+ 68];
+			//to find the average, parseint to make the avg a whole number, concat to add the strings together and divide by 5
+			var average=(parseInt(grade.concat()/5));
+		 	if(average >= 90){
+		 		console.log("A Average");
+		 	}else if (grade >=80 ){
+		  		console.log("B Average");
+		  	}else if (grade >=70){
+		  		console.log("C Average");
+		  	}else if (grade >=60){
+		  		console.log("D Average");
+		 	}else {
+		  		console.log("F Average");
+		 	}
+		 	 //The result is 81 and the avg is B because the first if condition failed.
+		 </script>
+	</body>
+</html>
