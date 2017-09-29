@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Get Day of the Week</title>
+	</head>
+	<body>
+		<h1 id="today"></h1>
+		<script type="text/javascript">
+			//using switch to get the current day of the week. Switch is to tell console.log which day to display.
+			switch(new Date().getDay()){
+				case 0:
+					document.write('Sunday');
+					break;
+				case 1:
+					document.write('Monday');
+					break;
+				case 2:
+					document.write('Tuesday');
+					break;
+				case 3:
+					document.write('Wednesday');
+					break;
+				case 4:
+					document.write('Thursday');
+					break;
+				case 5:
+					document.write('Friday');
+					break;
+				case 6:
+					document.write('saturday');
+					break;
+				}
+		document.getElementById("today").innerHTML= ("Welcome, today is");
+		//This activates the code inside the dom to display the day of the week.
+		</script>
+
+	</body>
+</html>
