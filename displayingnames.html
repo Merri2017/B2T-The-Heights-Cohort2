@@ -2,9 +2,20 @@
 <html>
 	<head>
 		<title>Displaying Names</title>
+
+		<style type="text/css">
+		/*To get Hello and the display to line up, side by side, use css display inline*/
+			h1{
+				display: inline;
+			}
+		</style>
 	</head>
+
 		<body>
+		<!-- Ordering where the code goes is important for where it shows up on the page. To get Hello to display first, I put it first. -->
+			<h1 id="hello"></h1>
 			<h1 id="display"></h1>
+			<!-- form and  onclick to get text input from the function 'action' -->
 			<form>
 				First name: <input type="text" id="fname" value="Curtis"><br>
 				Last name: <input type="text" id="lname" value="Jackson"><br>
@@ -18,6 +29,7 @@
 					var fn = document.getElementById('fname').value;
 					var fullName = fn + ' ' + ln;
 					document.getElementById("display").innerHTML = fullName;
+					document.getElementById("hello").innerHTML=("Hello" + " ");
 				}
 			</script>
 
