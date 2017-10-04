@@ -7,22 +7,22 @@
 	<!--this is to create an empty element with ID to display the results of for/in statement.-->
 		<h1 id="moo"></h1>
 		<h1 id="too"></h1>
-		<script type="text/javascript">
-			var library = [
-				{title: "'The Road Ahead'", author: "'Bill Gates'", readingStatus: true},
-				{title: "'Walter Isaacson'", author: "'Steve Jobs'", readingStatus: true},
-				{title: "'Mockingjay: The Final book of the Hunger Games'", author: "'Jose Cansco'", readingStatus: false},
+	<script type="text/javascript">
+		var library = [
+			{title: "'The Road Ahead'", author: "'Bill Gates'", readingStatus: true},
+			{title: "'Walter Isaacson'", author: "'Steve Jobs'", readingStatus: true},
+			{title: "'Mockingjay: The Final book of the Hunger Games'", author: "'Jose Cansco'", readingStatus: false},
 			];
-				// var starts at 0 and the counter counts by 1 going through the loop's entire length.
-				//since all of the conditions are met, both results will be displayed on screen. 
-				for (var i = 0;  i < library.length; i++) {
-					if (library[i].readingStatus == true){
-						document.getElementById("moo").innerHTML=" You have already read  " + library[i].title + " by " +library[i].author + "."
-					} 
-					else{
-						document.getElementById("too").innerHTML= " You have already read  " + library[i].title + " by " + library[i].author +"."
-					}
-				}	
-		</script>
+			// var starts at 0 and the counter counts by 1 going through the loop's entire length.
+			//since all of the conditions are met, both results will be displayed on screen. 
+		for (var i = 0;  i < library.length; i++) {
+			if (library[i].readingStatus == true){
+			document.getElementById("moo").innerHTML=" You have already read  " + library[i].title + " by " +library[i].author + "."
+			} 
+			else{
+			document.getElementById("too").innerHTML= " You have already read  " + library[i].title + " by " + library[i].author +"."
+			}
+		}	
+	</script>
 	</body>
 </html>
