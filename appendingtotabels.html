@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Appending to Tables</title>
+	</head>
+	<body>
+		<table id="myTable" border="1">
+			<tr>
+				<td>Clifford</td>
+				<td>Harris</td>
+			</tr>
+		</table><br>
+		Column 1: <input type="text" id="col1" value="Curtis"><br>
+		Column 2: <input type="text" id="col2" value="Jackson"><br>
+		<input type="button" onclick="insertRow()" value="Insert Row">
+		<script type="text/javascript">
+			//declaring the function insertrow to insert row with data when button is pressed.
+			function insertRow(){
+				//create table varible that will get table element content by it's ID
+				//create the variable row- this creates a new row when the button is pushed, hence the function is called.
+				//creating 2 variables for table data 1 and 2 which will create 2 new rows.
+				//innerHTML and the column's id + value to retrieve and display the user input into each column.		
+				var table = document.getElementById("myTable");
+				var row = table.insertRow();
+				var td1=row.insertCell();
+				var td2=row.insertCell();
+				td1.innerHTML = document.getElementById('col1').value;
+				td2.innerHTML = document.getElementById('col2').value;
+			}	  
+		</script>
+	</body>
+</html>
