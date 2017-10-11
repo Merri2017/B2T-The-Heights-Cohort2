@@ -1,0 +1,57 @@
+body{
+	background-image: url(teabird.jpg);
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+	background-position: cover;	
+}
+h1{
+	text-align: center;
+	color: pink;
+	font-size: 70px;
+	text-shadow: 3px 2px green;
+	font-family:cursive; 
+	font-style:italic;
+	font-weight: 1000px;
+}
+tr, td{
+	padding: 25px;
+}
+input[type=button]{	
+	color: lightcoral;
+	background-color:white;
+	font-size: xx-large;
+	border-radius:50%;
+	height: 100px;
+	width:100px;
+	
+}
+/* css selector, active, on class moo, changes the button background image when clicked */
+.moo:active{
+	 background-image: url(dumpling1.jpg);
+}
+/*this allows the button to keep the image until another button or the screen is pressed.*/
+.moo:focus{
+	background-image: url(dumpling1.jpg);
+}
+input[type=text]{
+	padding: right:20px;
+	padding-left: 20px;
+	font-size:20px;
+	background-color: white;
+	border-color: white;
+	border-radius:20%;
+}
+#container{
+    position: absolute;
+    cursor: move;
+	border-color: pink;
+	background-color: transparent; 
+	padding: right:40px;
+	padding-left: 40px;
+} 
+	
+
+
+
+
+

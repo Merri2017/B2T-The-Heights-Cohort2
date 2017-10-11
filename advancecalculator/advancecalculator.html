@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Merri's Advance Calculator</title>
+		<link rel="stylesheet" href="calculator.css">
+	</head>
+	<body>
+		<h1>Calculator</h1>
+		<div id="container">
+			<form name="calculator">
+			<!--readonly makes the display box non-clickable-->
+					<input type="text" name="answerbox" readonly>
+					<input class="moo" type="button" value="c" onclick="calculator.answerbox.value =''">
+					<br>
+					<input class="moo" type="button" value="7" onclick="calculator.answerbox.value += '7'">
+					<input class="moo" type="button" value="8" onclick="calculator.answerbox.value += '8'">
+					<input class="moo" type="button" value="9" onclick="calculator.answerbox.value += '9'">
+					<input class="moo" type="button" value="/" onclick="calculator.answerbox.value += '/'">
+					<br>
+					<input class="moo" type="button" value="4" onclick="calculator.answerbox.value += '4'">
+					<input class="moo" type="button" value="5" onclick="calculator.answerbox.value += '5'">
+					<input class="moo" type="button" value="6" onclick="calculator.answerbox.value += '6'">
+					<input class="moo" type="button" value="*" onclick="calculator.answerbox.value += '*'">
+					<br>
+					<input class="moo" type="button" value="1" onclick="calculator.answerbox.value += '1'">
+					<input class="moo" type="button" value="2" onclick="calculator.answerbox.value += '2'">
+					<input class="moo" type="button" value="3" onclick="calculator.answerbox.value += '3'">
+					<input class="moo" type="button" value="-" onclick="calculator.answerbox.value += '-'">
+					<br>
+					<input class="moo" type="button" value="." onclick="calculator.answerbox.value += '.'">
+					<input class="moo" type="button" value="0" onclick="calculator.answerbox.value += '0'">
+					<!--the eval function evaluates a string expression when the equal button is clicked.-->
+					<input class="moo" type="button" value="=" onclick="calculator.answerbox.value = eval(calculator.answerbox.value)">
+					<input class="moo" type="button" value="+" onclick="calculator.answerbox.value += '+'">
+			</form>
+		</div>
+	</body>
+</html>
